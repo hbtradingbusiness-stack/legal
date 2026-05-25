@@ -1,1 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creator & Affiliate Agreement , PREZLO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:    #1B3A6B;
+    --navy-lt: #EBF0F8;
+    --ink:     #111111;
+    --gray:    #4A4A4A;
+    --mid:     #888888;
+    --rule:    #DDDDDD;
+    --warn-bg: #FFF5F5;
+    --warn-bd: #CC0000;
+    --warn-tx: #CC0000;
+    --bg:      #F8F9FA;
+    --white:   #FFFFFF;
+    --max:     760px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── TOP BAR ── */
+  .topbar {
+    background: var(--navy);
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .topbar-brand {
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+  }
+  .topbar-meta {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--navy);
+    padding: 48px 32px 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .hero h1 {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .hero-sub {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* ── WRAPPER ── */
+  .wrapper {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 44px 24px 80px;
+  }
+
+  /* ── NOTICE BOX ── */
+  .notice {
+    border: 1.5px solid var(--navy);
+    background: var(--navy-lt);
+    border-radius: 4px;
+    padding: 18px 22px;
+    margin-bottom: 36px;
+  }
+  .notice-label {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .notice p {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 8px;
+    line-height: 1.65;
+  }
+  .notice p:last-child { margin-bottom: 0; }
+
+  /* ── WARN BOX ── */
+  .warn {
+    border: 1.5px solid var(--warn-bd);
+    background: var(--warn-bg);
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin: 20px 0;
+  }
+  .warn p {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--warn-tx);
+    line-height: 1.55;
+  }
+
+  /* ── INFO BOX ── */
+  .info-box {
+    border: 1.5px solid var(--navy);
+    background: var(--navy-lt);
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .info-box .info-label {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .info-box p {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 8px;
+    line-height: 1.65;
+  }
+  .info-box p:last-child { margin-bottom: 0; }
+
+  /* ── SECTION HEADINGS ── */
+  .section-head {
+    border-bottom: 2px solid var(--navy);
+    padding-bottom: 7px;
+    margin-top: 44px;
+    margin-bottom: 18px;
+  }
+  .section-head h2 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+  }
+
+  /* ── CLAUSES ── */
+  .clause {
+    margin-bottom: 14px;
+  }
+  .clause-num {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--navy);
+    display: inline;
+    margin-right: 5px;
+  }
+  .clause p {
+    display: inline;
+    font-size: 14.5px;
+    color: var(--ink);
+    line-height: 1.7;
+  }
+
+  /* ── DEFINITIONS ── */
+  .def-list { margin: 14px 0 0 12px; }
+  .def-item { margin-bottom: 9px; font-size: 14.5px; line-height: 1.65; }
+  .def-term { font-weight: 600; color: var(--ink); }
+
+  /* ── BULLET LISTS ── */
+  ul.legal-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 10px 18px;
+  }
+  ul.legal-list li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 7px;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+  ul.legal-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--navy);
+    font-size: 13px;
+    top: 1px;
+  }
+
+  /* ── CATEGORY LABELS ── */
+  .cat-label {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--ink);
+    margin-top: 14px;
+    margin-bottom: 4px;
+  }
+
+  /* ── TABLE ── */
+  .legal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 13px;
+  }
+  .legal-table th {
+    background: var(--navy);
+    color: #fff;
+    font-weight: 600;
+    padding: 9px 11px;
+    text-align: left;
+    font-size: 12px;
+  }
+  .legal-table td {
+    padding: 8px 11px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    line-height: 1.55;
+    color: var(--gray);
+  }
+  .legal-table tr:nth-child(even) td { background: var(--bg); }
+  .legal-table tr:nth-child(odd) td  { background: var(--white); }
+
+  /* ── CAPS TEXT ── */
+  .caps {
+    font-weight: 600;
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+
+  /* ── ACCEPTANCE ── */
+  .acceptance {
+    border-top: 2px solid var(--navy);
+    margin-top: 44px;
+    padding-top: 24px;
+  }
+  .acceptance h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--navy);
+    margin-bottom: 14px;
+  }
+
+  /* ── DOC FOOTER ── */
+  .doc-footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 44px;
+    padding-top: 18px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--mid);
+    letter-spacing: 0.02em;
+  }
+
+  /* ── SITE FOOTER ── */
+  .site-footer {
+    background: var(--navy);
+    padding: 22px 32px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+  }
+  .site-footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+  .site-footer a:hover { color: #fff; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .topbar { padding: 11px 16px; }
+    .hero { padding: 30px 16px 26px; }
+    .wrapper { padding: 28px 16px 56px; }
+    .legal-table { font-size: 12px; }
+    .legal-table th, .legal-table td { padding: 6px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="topbar-brand" href="https://getprezlo.com">PREZLO</a>
+  <span class="topbar-meta">legal@getprezlo.com</span>
+</div>
+
+<div class="hero">
+  <h1>Creator &amp; Affiliate Agreement</h1>
+  <div class="hero-sub">Version 1.3 &nbsp;&middot;&nbsp; Effective Date: May 25, 2026</div>
+</div>
+
+<div class="wrapper">
+
+  <div class="notice">
+    <div class="notice-label">Important , Please Read Before Proceeding</div>
+    <p>This Agreement governs your participation in the PREZLO Creator &amp; Affiliate Program. By accepting this Agreement (whether by clicking &ldquo;Accept,&rdquo; using your affiliate link, or receiving free application access), you confirm that you have read, understood, and agree to be bound by all terms set out below, including the binding arbitration provision and class-action waiver in Section 19.</p>
+    <p>This Agreement does not create an employment, agency, or investment-advisory relationship between you and PREZLO.</p>
+  </div>
+
+  <!-- 1 -->
+  <div class="section-head"><h2>1. &nbsp; Definitions</h2></div>
+  <p style="margin-bottom:12px;font-size:14.5px;">The following defined terms apply throughout this Agreement:</p>
+  <div class="def-list">
+    <div class="def-item"><span class="def-term">&ldquo;Agreement&rdquo;</span> &nbsp;means this Creator &amp; Affiliate Agreement, together with any written onboarding confirmation, Creator Content Policy, and any schedules or addenda incorporated by reference.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Affiliate Link&rdquo;</span> &nbsp;means the unique tracking URL or promotional code generated through the GoMarketMe platform and assigned solely to you for the purpose of attributing referrals to the Program.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Application&rdquo;</span> &nbsp;means the PREZLO iOS mobile application, including all features, content, and services made available through it.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Commission&rdquo;</span> &nbsp;means the one-time fixed payment described in Section 10.1, payable to you upon verification of a Qualified Paid Subscriber.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Confidential Information&rdquo;</span> &nbsp;has the meaning set out in Section 6.1.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Content&rdquo;</span> &nbsp;means any post, video, reel, short, story, thread, live stream, direct message, or other public or semi-public communication created or published by you that mentions, features, promotes, or endorses PREZLO or the Application, regardless of platform.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Creator&rdquo; or &ldquo;you&rdquo;</span> &nbsp;means the individual or entity that has accepted this Agreement and is participating in the Program.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Effective Date&rdquo;</span> &nbsp;means the earliest of: (a) the date you click &ldquo;Accept&rdquo; or &ldquo;I Agree&rdquo; on any PREZLO onboarding form; (b) the date you first use or share your Affiliate Link; or (c) the date you receive Free Access from PREZLO.</div>
+    <div class="def-item"><span class="def-term">&ldquo;FTC Guides&rdquo;</span> &nbsp;means the Federal Trade Commission&rsquo;s Guides Concerning the Use of Endorsements and Testimonials in Advertising, 16 C.F.R. Part 255, as updated in July 2023 and as may be further amended.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Free Access&rdquo;</span> &nbsp;means complimentary access to PREZLO Pro features provided by PREZLO to you in connection with the Program.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Material Connection&rdquo;</span> &nbsp;has the meaning given in the FTC Guides and includes, without limitation, the receipt of Free Access and the potential to earn Commissions.</div>
+    <div class="def-item"><span class="def-term">&ldquo;PREZLO&rdquo; or &ldquo;we&rdquo;</span> &nbsp;means PREZLO, an unregistered partnership operated by two individuals located in Israel, together with its owners, operators, agents, service providers, successors, and assigns.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Program&rdquo;</span> &nbsp;means the PREZLO Creator &amp; Affiliate Program described in Section 2.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Qualified Paid Subscriber&rdquo;</span> &nbsp;has the meaning set out in Section 10.2.</div>
+    <div class="def-item"><span class="def-term">&ldquo;Term&rdquo;</span> &nbsp;has the meaning set out in Section 2.5.</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="section-head"><h2>2. &nbsp; Program Overview, Approval, and Term</h2></div>
+  <div class="clause"><span class="clause-num">2.1</span><p>The Program permits approved Creators to promote the Application on public social media platforms in exchange for Free Access and the opportunity to earn Commissions. Participation confers no employment, partnership, franchise, or fiduciary status.</p></div>
+  <div class="clause"><span class="clause-num">2.2</span><p>Participation is subject to PREZLO&rsquo;s prior written approval. Submission of an application or receipt of a preliminary outreach message does not constitute acceptance into the Program. PREZLO may approve, decline, suspend, or terminate any Creator&rsquo;s participation at any time in its sole discretion.</p></div>
+  <div class="clause"><span class="clause-num">2.3</span><p>The Program is authorized for promotion to United States audiences only. PREZLO does not authorize Content directed at residents of the European Union, the United Kingdom, or Australia. Creators who have audiences in those jurisdictions must obtain prior written authorization from PREZLO before publishing any Content referencing the Application.</p></div>
+  <div class="clause"><span class="clause-num">2.4</span><p>PREZLO may modify, suspend, or discontinue the Program upon reasonable notice. Commissions verified before the date of discontinuation will be honored in accordance with Section 11.</p></div>
+  <div class="clause"><span class="clause-num">2.5</span><p><strong>Term.</strong> This Agreement commences on the Effective Date and continues until terminated by either party in accordance with Section 16 (the &ldquo;Term&rdquo;). Termination does not affect any rights or obligations that accrued before the date of termination, nor any provisions that by their nature survive termination.</p></div>
+
+  <!-- 3 -->
+  <div class="section-head"><h2>3. &nbsp; Eligibility</h2></div>
+  <div class="clause"><span class="clause-num">3.1</span><p>To participate in the Program, you must at all times: (a) be at least 18 years of age and legally competent to enter into a binding agreement; (b) maintain a publicly accessible content channel in good standing on at least one platform listed in Section 7.5; (c) have received written approval from PREZLO; and (d) remain in compliance with all terms of this Agreement.</p></div>
+  <div class="clause"><span class="clause-num">3.2</span><p>You are ineligible to participate if you are: (a) an employee, officer, director, or immediate family member of an employee, officer, or director of PREZLO; (b) subject to a current regulatory sanction, cease-and-desist order, or enforcement action by the FTC, SEC, FINRA, or any comparable authority; or (c) subject to any court order restricting your ability to promote financial products or services.</p></div>
+  <div class="clause"><span class="clause-num">3.3</span><p>PREZLO&rsquo;s eligibility determinations are final. PREZLO is not obligated to provide reasons for any approval or rejection.</p></div>
+
+  <!-- 4 -->
+  <div class="section-head"><h2>4. &nbsp; Nature of the Relationship</h2></div>
+  <div class="clause"><span class="clause-num">4.1</span><p><strong>Independent Contractor.</strong> You are an independent contractor. This Agreement does not create any employment, agency, partnership, joint venture, franchise, or representative relationship between you and PREZLO. You have no authority to bind PREZLO to any obligation or hold yourself out as an employee, officer, or authorized agent of PREZLO.</p></div>
+  <div class="clause"><span class="clause-num">4.2</span><p><strong>No Investment Advisory Capacity.</strong> You are not, and may not represent yourself as, a registered investment adviser, broker-dealer, registered representative, financial planner, or any other regulated financial professional acting on PREZLO&rsquo;s behalf. Nothing in this Agreement authorizes you to provide personalized investment advice, securities recommendations, portfolio guidance, or trading instructions in connection with any Content.</p></div>
+  <div class="clause"><span class="clause-num">4.3</span><p><strong>Non-Exclusivity.</strong> This Agreement does not prohibit you from participating in other creator or affiliate programs, subject to compliance with Sections 7, 8, and 9.</p></div>
+  <div class="clause"><span class="clause-num">4.4</span><p><strong>Tax Obligations.</strong> You are solely responsible for all federal, state, local, and foreign taxes, duties, and withholdings arising from Commissions received under this Agreement. You agree to provide PREZLO with a completed IRS Form W-9 (U.S. persons) or Form W-8BEN (non-U.S. persons) before any Commission payment is made. If your aggregate Commissions meet or exceed applicable IRS reporting thresholds in a calendar year, PREZLO will issue the required Form 1099-NEC.</p></div>
+
+  <!-- 5 -->
+  <div class="section-head"><h2>5. &nbsp; Representations and Warranties</h2></div>
+  <div class="clause"><span class="clause-num">5.1</span><p><strong>Creator Representations and Warranties.</strong> You represent and warrant to PREZLO, as of the Effective Date and on a continuing basis throughout the Term, that:</p></div>
+  <ul class="legal-list">
+    <li>You have full legal capacity, right, and authority to enter into this Agreement and to perform all obligations set out herein;</li>
+    <li>This Agreement constitutes a valid and binding obligation, enforceable against you in accordance with its terms;</li>
+    <li>Your entry into and performance of this Agreement does not conflict with any other agreement, court order, or legal obligation to which you are subject;</li>
+    <li>All Content you create and publish in connection with the Program will be based on your genuine, honest experience with the Application;</li>
+    <li>You own or have secured all rights necessary to publish, license, and grant the rights described in Section 14 with respect to your Content;</li>
+    <li>Your Content will not infringe any third party&rsquo;s intellectual property, privacy, publicity, or other rights;</li>
+    <li>Your Content will not contain any defamatory, obscene, fraudulent, or unlawful material;</li>
+    <li>You have not been convicted of, or charged with, any criminal offence involving fraud, dishonesty, or financial misconduct; and</li>
+    <li>You will comply with all applicable laws, regulations, and platform policies, including the FTC Guides and applicable securities laws.</li>
+  </ul>
+  <div class="clause"><span class="clause-num">5.2</span><p><strong>PREZLO Representations and Warranties.</strong> PREZLO represents and warrants to you, as of the Effective Date, that:</p></div>
+  <ul class="legal-list">
+    <li>PREZLO has the right and authority to enter into this Agreement and to operate the Program;</li>
+    <li>This Agreement constitutes a valid and binding obligation of PREZLO, enforceable in accordance with its terms;</li>
+    <li>Operation of the Program does not, to PREZLO&rsquo;s knowledge, infringe any third party&rsquo;s intellectual property rights; and</li>
+    <li>PREZLO will administer the Program and calculate Commissions in good faith and in accordance with the terms of this Agreement.</li>
+  </ul>
+  <div class="clause"><span class="clause-num">5.3</span><p class="caps">Disclaimer of Warranties. EXCEPT AS EXPRESSLY SET OUT IN SECTION 5.2, PREZLO MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY WARRANTY AS TO THE ACCURACY, COMPLETENESS, OR RELIABILITY OF THE APPLICATION OR ITS MARKET-DATA ALERTS, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, OR ANY WARRANTY THAT THE PROGRAM WILL GENERATE ANY MINIMUM LEVEL OF COMMISSIONS FOR ANY CREATOR.</p></div>
+
+  <!-- 6 -->
+  <div class="section-head"><h2>6. &nbsp; Confidentiality</h2></div>
+  <div class="clause"><span class="clause-num">6.1</span><p><strong>Definition of Confidential Information.</strong> &ldquo;Confidential Information&rdquo; means any non-public information disclosed by PREZLO to you that is designated as confidential or that you reasonably should understand to be confidential. Confidential Information includes, without limitation: the Application&rsquo;s proprietary alert logic, scanning criteria, and detection thresholds; market data integrations, backend architecture, and technical infrastructure; user data, subscriber counts, and retention metrics; pricing, revenue, and financial information; business plans, marketing strategies, creator program structure, and commission rates; and any non-public information about PREZLO&rsquo;s partners, vendors, or operations.</p></div>
+  <div class="clause"><span class="clause-num">6.2</span><p><strong>Confidentiality Obligations.</strong> During the Term and for a period of three years following termination, you agree to: (a) hold all Confidential Information in strict confidence; (b) not disclose any Confidential Information to any third party without PREZLO&rsquo;s prior written consent; (c) use Confidential Information solely for the purpose of participating in the Program; and (d) promptly notify PREZLO upon becoming aware of any actual or threatened unauthorized disclosure.</p></div>
+  <div class="clause"><span class="clause-num">6.3</span><p><strong>Exceptions.</strong> The confidentiality obligations do not apply to information that: (a) is or becomes publicly available through no fault of yours; (b) was rightfully in your possession before disclosure by PREZLO; (c) is independently developed by you without reference to Confidential Information; or (d) is required to be disclosed by law or valid court order, provided you give PREZLO prompt prior written notice and cooperate in seeking a protective order.</p></div>
+  <div class="clause"><span class="clause-num">6.4</span><p><strong>Return or Destruction.</strong> Upon termination or upon PREZLO&rsquo;s written request, you will promptly return or destroy all materials containing Confidential Information and certify in writing to PREZLO that you have done so.</p></div>
+  <div class="clause"><span class="clause-num">6.5</span><p><strong>Irreparable Harm.</strong> You acknowledge that any breach of this Section would cause PREZLO irreparable harm for which monetary damages alone would be an inadequate remedy, and that PREZLO is accordingly entitled to seek injunctive or other equitable relief without the requirement to post bond.</p></div>
+
+  <!-- 7 -->
+  <div class="section-head"><h2>7. &nbsp; Disclosure Obligations</h2></div>
+  <div class="clause"><span class="clause-num">7.1</span><p><strong>Material Connection.</strong> You acknowledge that you have a Material Connection to PREZLO by virtue of receiving Free Access and the potential to earn Commissions. Under the FTC Guides, as updated in July 2023, you are required to clearly and conspicuously disclose this Material Connection in every piece of Content,including posts, videos, Stories, Reels, Shorts, threads, live streams, comment replies, and direct messages to groups or communities,that mentions, features, promotes, endorses, or provides a link to the Application.</p></div>
+  <div class="clause"><span class="clause-num">7.2</span><p><strong>Clear and Conspicuous Standard.</strong> A disclosure satisfies this standard only if it is: (a) difficult for an ordinary consumer to miss; (b) easily understandable without requiring additional steps; (c) placed at or before the point of the endorsement; and (d) presented in a format, size, and contrast that matches the medium. A disclosure that requires a consumer to click through, scroll, expand, or separately navigate to a profile page does not meet this standard.</p></div>
+  <div class="clause"><span class="clause-num">7.3</span><p><strong>Prohibited Disclosure Practices.</strong> The following methods are expressly prohibited as the sole means of disclosure:</p></div>
+  <ul class="legal-list">
+    <li>Disclosure placed only on a profile page, biography, or link-in-bio landing page</li>
+    <li>Disclosure positioned after the &ldquo;see more&rdquo; or &ldquo;more&rdquo; fold in a caption or description</li>
+    <li>Disclosure embedded within a string of hashtags at the end of a post</li>
+    <li>Use of ambiguous terms such as #partner, #collab, #ambassador, or #gifted without an accompanying clear statement of the commercial relationship</li>
+    <li>Sole reliance on a platform-native paid-partnership or branded-content label without any in-Content language</li>
+  </ul>
+  <div class="clause"><span class="clause-num">7.4</span><p><strong>Required Disclosure Language.</strong> You must include one of the following approved disclosures in every piece of eligible Content:</p></div>
+  <div class="info-box">
+    <div class="info-label">Approved Disclosure Language</div>
+    <p><strong>Where Free Access only:</strong><br>&ldquo;Ad: PREZLO gave me free access to try their app.&rdquo;</p>
+    <p><strong>Where Free Access and Commission eligibility:</strong><br>&ldquo;Ad: PREZLO gave me free access and pays me if you subscribe.&rdquo;</p>
+    <p><strong>Extended form (recommended for Content referencing market data, alerts, or stock performance):</strong><br>&ldquo;Ad: PREZLO gave me free access and pays me $5 if you become a paid subscriber. PREZLO is a market-data app, not investment advice.&rdquo;</p>
+  </div>
+  <div class="clause"><span class="clause-num">7.5</span><p><strong>Platform-Specific Requirements.</strong></p></div>
+  <table class="legal-table">
+    <thead><tr><th>Platform</th><th>Platform Tool Required</th><th>Minimum In-Content Requirement</th></tr></thead>
+    <tbody>
+      <tr><td>TikTok</td><td>Enable the Commercial Content Disclosure toggle</td><td>On-screen text or spoken disclosure before any promotional claim</td></tr>
+      <tr><td>Instagram / Reels</td><td>Activate Branded Content / Paid Partnership tool; tag PREZLO as business partner</td><td>Disclosure in caption above the &ldquo;more&rdquo; fold</td></tr>
+      <tr><td>YouTube Shorts</td><td>Select the Paid Promotion checkbox in video details</td><td>On-screen or spoken disclosure within the first 10 seconds</td></tr>
+      <tr><td>X (formerly Twitter)</td><td>Enable Paid Partnership label where available</td><td>&ldquo;Ad:&rdquo; or #ad at the opening of the post text, before any link</td></tr>
+    </tbody>
+  </table>
+  <div class="clause"><span class="clause-num">7.6</span><p><strong>Video and Live-Stream Content.</strong> For video and live-stream formats, a caption-only disclosure does not satisfy this Agreement. The disclosure must also appear: (a) as on-screen text visible for a minimum of three continuous seconds; or (b) spoken aloud, clearly, before any endorsement of the Application. For live streams extending beyond 30 minutes, the disclosure must be repeated at intervals of no more than 30 minutes.</p></div>
+  <div class="clause"><span class="clause-num">7.7</span><p><strong>Brand Liability.</strong> You acknowledge that under the FTC Guides, PREZLO may incur liability for misleading endorsements made through your Content even where you are independently responsible for the failure to disclose. Any failure to disclose constitutes a material breach entitling PREZLO to withhold Commissions, terminate this Agreement, and pursue indemnification under Section 18.</p></div>
+
+  <!-- 8 -->
+  <div class="section-head"><h2>8. &nbsp; Financial Content Rules and Required Disclaimers</h2></div>
+  <div class="clause"><span class="clause-num">8.1</span><p><strong>Nature of the Application.</strong> PREZLO is a market-data alert application. It is not a registered investment adviser, broker-dealer, commodity trading adviser, or financial planner. Alerts generated by the Application are automated, informational notifications triggered by defined market-data thresholds. PREZLO does not believe that its current activities require registration under the Investment Advisers Act of 1940; however, PREZLO makes no representation regarding the regulatory characterization of its activities by any future regulatory authority, and nothing in this Section constitutes legal advice or a guarantee of PREZLO&rsquo;s regulatory status. You may not represent to any audience that PREZLO has been cleared, registered, or approved by any regulatory body.</p></div>
+  <div class="clause"><span class="clause-num">8.2</span><p><strong>Mandatory Financial Disclaimer.</strong> Every piece of Content that references Application alerts, specific securities, stock tickers, market movements, price changes, percentage gains, or any financial data must include the following disclaimer:</p></div>
+  <div class="info-box">
+    <div class="info-label">Required Financial Disclaimer</div>
+    <p><strong>Short form (text posts, captions, comment sections):</strong><br>&ldquo;Historical movement only. Not investment advice. Trading involves risk.&rdquo;</p>
+    <p><strong>Extended form (required for any Content showing alert data, charts, stock performance, or Win Cards):</strong><br>&ldquo;PREZLO alerts are automated market-data notifications. Past stock movements do not predict future results. This is not investment advice or a recommendation to buy, sell, or hold any security. Trading involves significant risk of loss.&rdquo;</p>
+  </div>
+  <div class="clause"><span class="clause-num">8.3</span><p><strong>Win Cards and Performance Screenshots.</strong> Where Content includes a PREZLO Win Card or any screenshot displaying post-alert price movement, you must also include: &ldquo;Historical peak after alert. Does not reflect any user&rsquo;s entry or exit. Past performance does not indicate future results.&rdquo; This statement must be visible in the same frame or post as the visual.</p></div>
+  <div class="clause"><span class="clause-num">8.4</span><p><strong>Regulatory Awareness.</strong> You acknowledge that Content promoting a financial application may attract scrutiny under: (a) Section 5 of the FTC Act; (b) the FTC Guides; and (c) Section 17(b) of the Securities Act of 1933. You agree not to create Content that combines PREZLO promotion with any separately compensated promotion of a specific issuer&rsquo;s securities without prior written authorization from PREZLO and independent securities counsel review.</p></div>
+  <div class="clause"><span class="clause-num">8.5</span><p><strong>FINRA-Informed Compliance.</strong> You acknowledge that in a March 2024 enforcement action, FINRA imposed an $850,000 fine against a broker-dealer for failure to supervise influencer communications promoting a financial product. PREZLO&rsquo;s monitoring and pre-approval rights in Section 15 are designed to satisfy analogous supervisory obligations. Your cooperation with those processes is a material term of this Agreement.</p></div>
+
+  <!-- 9 -->
+  <div class="section-head"><h2>9. &nbsp; Prohibited Claims and Content</h2></div>
+  <div class="clause"><span class="clause-num">9.1</span><p>The following categories of claims, representations, and content types are expressly prohibited in any Content that references or promotes PREZLO, regardless of whether the Content is explicitly identified as sponsored:</p></div>
+  <div class="cat-label">(a) &nbsp; Financial performance and outcome claims:</div>
+  <ul class="legal-list">
+    <li>Any guarantee, assurance, or strong implication of profit, financial return, or income generation</li>
+    <li>Statements that PREZLO, an alert, or any information provided by the Application caused, predicted, or enabled a profitable trade</li>
+    <li>References to your own or any other user&rsquo;s trading results in a manner that attributes those results to PREZLO&rsquo;s alerts</li>
+    <li>Characterizations of any alerted security as &ldquo;safe,&rdquo; &ldquo;low risk,&rdquo; &ldquo;due for a move,&rdquo; or &ldquo;guaranteed to perform&rdquo;</li>
+    <li>Urgency-based language designed to pressure immediate trading decisions, including: &ldquo;buy now,&rdquo; &ldquo;don&rsquo;t miss this,&rdquo; &ldquo;get in before it&rsquo;s too late,&rdquo; or &ldquo;this is your chance&rdquo;</li>
+  </ul>
+  <div class="cat-label">(b) &nbsp; Advisory and recommendation claims:</div>
+  <ul class="legal-list">
+    <li>Personalized buy, sell, hold, or short recommendations regarding any security</li>
+    <li>Price targets, entry points, exit points, or stop-loss levels derived from or attributed to PREZLO alerts</li>
+    <li>Statements characterizing the Application as identifying &ldquo;good&rdquo; stocks, &ldquo;stocks worth buying,&rdquo; or &ldquo;securities with upside&rdquo;</li>
+    <li>Any characterization of the Application as a financial adviser, trading system, algorithmic strategy, or investment tool</li>
+  </ul>
+  <div class="cat-label">(c) &nbsp; Prohibited formats and arrangements:</div>
+  <ul class="legal-list">
+    <li>Content that combines a PREZLO Affiliate Link with separately compensated stock promotion or any arrangement that could constitute securities touting under Section 17(b) of the Securities Act of 1933, without prior written authorization from PREZLO and independent securities-law review</li>
+    <li>Content targeting audiences in the European Union, United Kingdom, or Australia without prior written authorization from PREZLO</li>
+    <li>Fabricated testimonials, invented performance data, or references to user outcomes that have not in fact occurred</li>
+    <li>Content stating or implying that PREZLO is affiliated with, endorsed by, registered with, or supervised by any broker-dealer, registered investment adviser, securities exchange, or regulatory authority</li>
+  </ul>
+
+  <!-- 10 -->
+  <div class="section-head"><h2>10. &nbsp; Commission Structure</h2></div>
+  <div class="clause"><span class="clause-num">10.1</span><p><strong>Commission Rate.</strong> Subject to the terms of this Agreement, PREZLO will pay you a Commission of USD $5.00 per Qualified Paid Subscriber. The Commission is payable once per Qualified Paid Subscriber and does not recur with subscription renewals, upgrades, or extensions.</p></div>
+  <div class="clause"><span class="clause-num">10.2</span><p><strong>Qualified Paid Subscriber.</strong> A &ldquo;Qualified Paid Subscriber&rdquo; means a natural person who: (a) downloads and installs the Application; (b) completes a first paid subscription transaction through Apple In-App Purchase; (c) is uniquely and verifiably attributed to your Affiliate Link by GoMarketMe&rsquo;s tracking system within the applicable attribution window; and (d) is not excluded under Section 10.3.</p></div>
+  <div class="clause"><span class="clause-num">10.3</span><p><strong>Excluded Transactions.</strong> The following do not qualify for Commission:</p></div>
+  <ul class="legal-list">
+    <li>Free trial activations that have not converted to a paid billing event</li>
+    <li>Subscription transactions that are refunded, reversed, voided, or charged back by Apple or the subscriber</li>
+    <li>Subscriptions canceled or lapsed before the first successful billing date</li>
+    <li>Transactions attributable to self-referrals, including transactions made by you or any person acting on your behalf</li>
+    <li>Duplicate subscriptions by the same Apple ID, device identifier, or subscriber identity</li>
+    <li>Transactions attributed through fraudulent, manipulative, or unauthorized means, including click stuffing, cookie dropping, forced clicks, or manipulation of attribution identifiers</li>
+    <li>Transactions where attribution cannot be independently verified by reference to both GoMarketMe records and PREZLO&rsquo;s subscription database</li>
+    <li>Transactions originating from Content that violates any provision of this Agreement at the time of the referral</li>
+  </ul>
+  <div class="clause"><span class="clause-num">10.4</span><p><strong>Free Access.</strong> PREZLO may provide Free Access for a period communicated to you at onboarding. Free Access does not entitle you to Commission and may be modified or revoked at any time. Free Access is provided solely to enable you to evaluate and authentically describe the Application.</p></div>
+
+  <!-- 11 -->
+  <div class="section-head"><h2>11. &nbsp; Payment Terms</h2></div>
+  <div class="clause"><span class="clause-num">11.1</span><p><strong>Payment Cycle.</strong> Commissions for Qualified Paid Subscribers verified during a given calendar month will be paid on or before the last business day of the following calendar month.</p></div>
+  <div class="clause"><span class="clause-num">11.2</span><p><strong>Payment Method.</strong> All Commissions will be disbursed via PayPal to the verified email address provided at onboarding. PREZLO bears no liability for payments delayed or lost due to an incorrect, unverified, or inactive PayPal address.</p></div>
+  <div class="clause"><span class="clause-num">11.3</span><p><strong>Minimum Disbursement Threshold.</strong> Commissions will be disbursed only when the verified outstanding balance reaches USD $20.00 or more. Balances below this threshold carry forward. Upon termination, any outstanding balance will be paid within 30 days, subject to the clawback and offset rights in Section 12.</p></div>
+  <div class="clause"><span class="clause-num">11.4</span><p><strong>Currency.</strong> All amounts are denominated in United States Dollars.</p></div>
+  <div class="clause"><span class="clause-num">11.5</span><p><strong>Tax Documentation Prerequisite.</strong> No Commission payment will be disbursed until PREZLO has received a completed and executed IRS Form W-9 or W-8BEN, as applicable.</p></div>
+  <div class="clause"><span class="clause-num">11.6</span><p><strong>Payment Disputes.</strong> You must notify PREZLO in writing at legal@getprezlo.com of any disputed payment within 30 calendar days of the relevant payment date. PREZLO&rsquo;s records, as corroborated by GoMarketMe and RevenueCat data, constitute the authoritative and controlling source for Commission calculations.</p></div>
+
+  <!-- 12 -->
+  <div class="section-head"><h2>12. &nbsp; Clawbacks and Commission Reversals</h2></div>
+  <div class="clause"><span class="clause-num">12.1</span><p>PREZLO reserves the right to withhold, offset, reverse, or recover any Commission, in whole or in part, upon the occurrence of any of the following:</p></div>
+  <ul class="legal-list">
+    <li>A subscriber whose subscription generated a Commission subsequently receives an Apple refund, reversal, or chargeback within 90 calendar days of the original purchase date</li>
+    <li>A Commission was paid in respect of a transaction later determined to be fraudulent, manipulative, duplicative, or in breach of Apple&rsquo;s App Store policies</li>
+    <li>A Commission was attributed to a self-referral or to a person acting in concert with you to generate artificial referral events</li>
+    <li>The Content that generated the referral is found, within 24 months of the date of publication, to violate Section 7, Section 8, Section 9, or any applicable law or platform policy</li>
+    <li>You breach any material term of this Agreement and fail to cure that breach within the timeframe specified in Section 16.1</li>
+  </ul>
+  <div class="clause"><span class="clause-num">12.2</span><p>PREZLO will provide written notice of any clawback, specifying the transaction and the basis for recovery. A clawback resulting in a negative balance may be offset against future Commissions. If no future Commissions are payable, PREZLO reserves the right to seek recovery by other lawful means.</p></div>
+
+  <!-- 13 -->
+  <div class="section-head"><h2>13. &nbsp; GoMarketMe Attribution and Tracking</h2></div>
+  <div class="clause"><span class="clause-num">13.1</span><p><strong>Attribution Platform.</strong> Referral attribution is managed exclusively through GoMarketMe. Each Creator will be assigned a unique Affiliate Link. You may not share, transfer, sublicense, or otherwise permit use of your Affiliate Link by any other person or entity.</p></div>
+  <div class="clause"><span class="clause-num">13.2</span><p><strong>Controlling Records.</strong> PREZLO&rsquo;s affiliate and subscription records, as maintained through GoMarketMe and RevenueCat, are the authoritative and controlling source for Commission eligibility, attribution determinations, and payout calculations. PREZLO&rsquo;s records govern in the event of any discrepancy, absent clear written evidence of a data error.</p></div>
+  <div class="clause"><span class="clause-num">13.3</span><p><strong>Attribution Model and Window.</strong> Attribution is calculated on a last-click basis within GoMarketMe&rsquo;s standard attribution window. PREZLO does not guarantee attribution for installs or subscriptions occurring outside that window, through non-tracked channels, or where tracking identifiers are blocked, cleared, or otherwise unavailable.</p></div>
+  <div class="clause"><span class="clause-num">13.4</span><p><strong>Data Collection.</strong> You acknowledge that GoMarketMe may collect click events, install events, conversion events, attribution identifiers, and subscription data in connection with your Affiliate Link, pursuant to GoMarketMe&rsquo;s privacy policy available at gomarketme.co/privacy.</p></div>
+
+  <!-- 14 -->
+  <div class="section-head"><h2>14. &nbsp; Intellectual Property and Content License</h2></div>
+  <div class="clause"><span class="clause-num">14.1</span><p><strong>Creator-Owned Content.</strong> You retain ownership of original Content you create. PREZLO acquires no proprietary rights in your Content except as expressly set out in this Section.</p></div>
+  <div class="clause"><span class="clause-num">14.2</span><p><strong>License Grant.</strong> By publishing Content that features PREZLO, you grant PREZLO a non-exclusive, royalty-free, sublicensable, worldwide license to repost, share, excerpt, quote, or otherwise use that Content on PREZLO&rsquo;s social media channels, website, and marketing materials, provided that: (a) PREZLO preserves all disclosure language included in the original Content; (b) PREZLO credits your handle or channel name where reasonably practicable; and (c) PREZLO does not alter your Content in a manner that would cause it to violate Section 9 or any applicable law.</p></div>
+  <div class="clause"><span class="clause-num">14.3</span><p><strong>Content Removal.</strong> You may request removal of your Content from PREZLO&rsquo;s channels at any time by written notice to legal@getprezlo.com. PREZLO will use commercially reasonable efforts to comply within 14 business days of a valid request.</p></div>
+  <div class="clause"><span class="clause-num">14.4</span><p><strong>PREZLO Trademarks.</strong> Nothing in this Agreement grants you the right to use PREZLO&rsquo;s name, logo, trademarks, or trade dress except to accurately identify and reference the Application in compliant Content. You may not use PREZLO&rsquo;s trademarks in a domain name, social media handle, or business name without PREZLO&rsquo;s prior written consent.</p></div>
+
+  <!-- 15 -->
+  <div class="section-head"><h2>15. &nbsp; Monitoring, Recordkeeping, and Compliance</h2></div>
+  <div class="clause"><span class="clause-num">15.1</span><p><strong>Creator Obligations.</strong> You agree to: (a) provide PREZLO with the direct URL or platform link to every piece of Content that mentions or promotes PREZLO within 48 hours of publication; (b) retain screenshots, captions, analytics reports, and evidence of disclosure compliance for a minimum of 24 months following publication; (c) respond to PREZLO compliance inquiries within five business days; and (d) notify PREZLO promptly if any published Content is removed, restricted, or flagged by a platform.</p></div>
+  <div class="clause"><span class="clause-num">15.2</span><p><strong>PREZLO&rsquo;s Monitoring Rights.</strong> PREZLO reserves the right to monitor, review, and audit your Content for compliance with this Agreement and applicable law at any time during the Term and for 24 months following termination. You hereby authorize PREZLO to preserve and retain copies of publicly accessible Content for compliance and recordkeeping purposes.</p></div>
+  <div class="clause"><span class="clause-num">15.3</span><p><strong>Pre-Publication Review.</strong> PREZLO may, at its discretion, require pre-publication review of scripts, captions, or draft Content for Creators who are new to the Program or who have received a prior compliance notice. Where required, PREZLO will endeavor to provide written feedback within three business days. Publishing Content that requires pre-publication review without obtaining PREZLO&rsquo;s approval constitutes a material breach of this Agreement.</p></div>
+  <div class="clause"><span class="clause-num">15.4</span><p><strong>Regulatory Recordkeeping.</strong> You acknowledge that PREZLO&rsquo;s recordkeeping obligations may be informed by applicable securities and advertising regulations, including standards established by FINRA and the FTC. You agree to cooperate fully with any reasonable audit or information request related to such obligations.</p></div>
+
+  <!-- 16 -->
+  <div class="section-head"><h2>16. &nbsp; Non-Compliance, Remediation, and Termination</h2></div>
+  <div class="clause"><span class="clause-num">16.1</span><p><strong>Notice and Cure.</strong> If PREZLO determines that any Content violates this Agreement, PREZLO will provide written notice specifying the violation. You must: (a) correct or remove the non-compliant Content within 48 hours; (b) confirm in writing that the correction or removal is complete; and (c) provide PREZLO with a screenshot or direct link evidencing the corrected or removed Content. Failure to comply within this period constitutes a continuing material breach.</p></div>
+  <div class="clause"><span class="clause-num">16.2</span><p><strong>Commission Suspension.</strong> Upon issuance of a non-compliance notice, PREZLO may suspend all Commission disbursements until the violation is fully remediated to PREZLO&rsquo;s reasonable satisfaction.</p></div>
+  <div class="clause"><span class="clause-num">16.3</span><p><strong>Immediate Termination.</strong> PREZLO may terminate this Agreement immediately, without prior notice or opportunity to cure, upon the occurrence of any of the following:</p></div>
+  <ul class="legal-list">
+    <li>A second or subsequent violation of Section 7, 8, or 9 following a prior written notice</li>
+    <li>Any Content constituting an unlawful financial promotion, unregistered investment advice, or securities touting under applicable U.S. federal or state law</li>
+    <li>Fraudulent referral activity, including self-referrals, click fraud, or manipulation of attribution data</li>
+    <li>Material misrepresentation regarding your identity, audience composition, platform standing, or compliance with this Agreement</li>
+    <li>Any conduct that, in PREZLO&rsquo;s reasonable judgment, creates material legal, regulatory, reputational, or financial risk to PREZLO</li>
+    <li>A Morality Event as defined in Section 16.4</li>
+  </ul>
+  <div class="clause"><span class="clause-num">16.4</span><p><strong>Morality Clause.</strong> A &ldquo;Morality Event&rdquo; means any of the following: (a) you are formally charged with, convicted of, or plead guilty or no contest to any criminal offence involving fraud, dishonesty, financial misconduct, or moral turpitude; (b) you are named in a formal SEC, FTC, or FINRA enforcement action related to securities promotion, investment advice, or deceptive advertising; (c) you publicly make statements or publish content,unrelated to PREZLO,that are objectively hateful, discriminatory, or unlawful, and that result in documented, material harm to PREZLO&rsquo;s reputation or commercial interests, such harm evidenced by platform action against PREZLO&rsquo;s accounts, loss of a material business relationship, or formal complaint from a regulatory authority; or (d) your conduct or public statements cause, or are reasonably likely to cause based on objective evidence, material and demonstrable reputational or commercial harm to PREZLO or the Application. Upon occurrence of a Morality Event, PREZLO may terminate this Agreement immediately, disable your Affiliate Link, and cease all Commission accruals, without liability to you for lost future earnings.</p></div>
+  <div class="clause"><span class="clause-num">16.5</span><p><strong>Effect of Termination.</strong> Upon termination, whether by either party and for any reason: (a) your Affiliate Link and offer code will be immediately deactivated; (b) Free Access will be revoked; (c) Commissions earned and verified before the termination date, net of any outstanding clawbacks, will be paid in accordance with Section 11.3, subject to Section 16.7; and (d) the obligations in Sections 6, 7 (with respect to existing Content), 12, 14.2, 15.2, 17, 18, 19, and 21 survive termination indefinitely.</p></div>
+  <div class="clause"><span class="clause-num">16.6</span><p><strong>Creator&rsquo;s Right to Terminate.</strong> You may terminate this Agreement at any time by providing PREZLO with 14 days&rsquo; prior written notice delivered to legal@getprezlo.com. Termination by you under this Section does not entitle you to any compensation, kill fee, or damages beyond Commissions already earned and verified in accordance with this Agreement. You may also terminate this Agreement immediately, upon written notice to PREZLO, if PREZLO materially breaches its payment obligations under Section 11 and fails to cure that breach within 14 days of receiving written notice from you specifying the breach.</p></div>
+  <div class="clause"><span class="clause-num">16.7</span><p><strong>Post-Termination Commission Pipeline.</strong> Where this Agreement is terminated: (a) by you under Section 16.6 with 14 days&rsquo; notice; (b) by PREZLO without cause; or (c) by you for cause under Section 16.6, PREZLO will honor Commissions for Qualified Paid Subscribers whose subscriptions are confirmed within 30 calendar days following the termination date, provided that: (i) the relevant referral was made while your Affiliate Link was active during the Term; (ii) the subscription satisfies all requirements of Section 10.2; and (iii) no clawback condition under Section 12 applies. No post-termination pipeline Commission is payable where this Agreement is terminated by PREZLO for cause under Section 16.3, or upon occurrence of a Morality Event under Section 16.4.</p></div>
+
+  <!-- 17 -->
+  <div class="section-head"><h2>17. &nbsp; Non-Disparagement</h2></div>
+  <div class="clause"><span class="clause-num">17.1</span><p>During the Term and for a period of 24 months following termination, you agree not to make, publish, broadcast, or communicate any statement, post, video, or other content,whether on social media, in the press, or in any other public or semi-public forum,that: (a) disparages, defames, or portrays PREZLO, its owners, operators, employees, or the Application in a materially false or misleading light; or (b) is reasonably likely to damage PREZLO&rsquo;s reputation or commercial interests.</p></div>
+  <div class="clause"><span class="clause-num">17.2</span><p>This Section does not prohibit you from: (a) making truthful statements about your honest experience with the Application; (b) responding to direct questions with accurate factual information; or (c) cooperating with any lawfully issued regulatory inquiry, subpoena, or court order.</p></div>
+  <div class="clause"><span class="clause-num">17.3</span><p>You acknowledge that a breach of this Section would cause PREZLO irreparable harm for which monetary damages alone would be an inadequate remedy, and that PREZLO is accordingly entitled to seek injunctive or other equitable relief in addition to any other remedies available at law or in equity.</p></div>
+
+  <!-- 18 -->
+  <div class="section-head"><h2>18. &nbsp; Indemnification</h2></div>
+  <div class="clause"><span class="clause-num">18.1</span><p>You agree to defend, indemnify, and hold harmless PREZLO and its owners, operators, officers, agents, service providers, successors, and assigns from and against any and all third-party claims, demands, proceedings, damages, losses, liabilities, costs, and expenses (including reasonable legal fees and disbursements) arising out of or in connection with: (a) any Content you publish, including any failure to include required disclosures, prohibited claims, misleading representations, or intellectual property infringement; (b) any breach of a representation, warranty, or obligation under this Agreement; (c) any violation of applicable law, including the FTC Guides, the Securities Act of 1933, the Securities Exchange Act of 1934, or applicable platform policies; (d) any third-party allegation that your Content constituted investment advice, a securities recommendation, or a regulated financial promotion; or (e) any fraudulent referral activity.</p></div>
+  <div class="clause"><span class="clause-num">18.2</span><p>PREZLO will provide prompt written notice of any claim for which indemnification is sought and will cooperate reasonably in the defense of such claim at your expense. PREZLO reserves the right to assume exclusive control of the defense of any claim at any time, without prejudice to its right to seek indemnification.</p></div>
+
+  <!-- 19 -->
+  <div class="section-head"><h2>19. &nbsp; Limitation of Liability</h2></div>
+  <div class="warn">
+    <p>THE LIMITATIONS IN THIS SECTION APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW AND DO NOT APPLY TO LIABILITY ARISING FROM FRAUD, WILLFUL MISCONDUCT, OR GROSS NEGLIGENCE.</p>
+  </div>
+  <div class="clause"><span class="clause-num">19.1</span><p class="caps">Exclusion of Consequential Damages. IN NO EVENT WILL PREZLO BE LIABLE TO YOU FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF GOODWILL, OR LOSS OF DATA, ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE PROGRAM, EVEN IF PREZLO HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p></div>
+  <div class="clause"><span class="clause-num">19.2</span><p class="caps">Aggregate Liability Cap. PREZLO'S TOTAL AGGREGATE LIABILITY TO YOU ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STATUTE, OR OTHERWISE, WILL NOT EXCEED THE TOTAL AMOUNT OF COMMISSIONS ACTUALLY PAID BY PREZLO TO YOU IN THE 12 MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM.</p></div>
+  <div class="clause"><span class="clause-num">19.3</span><p><strong>Essential Basis.</strong> You acknowledge that the limitations of liability in this Section reflect a reasonable allocation of risk, are an essential element of the basis of the bargain between the parties, and that PREZLO would not have entered into this Agreement without these limitations.</p></div>
+  <div class="clause"><span class="clause-num">19.4</span><p><strong>Creator Liability.</strong> Nothing in this Section limits your liability to PREZLO arising from: (a) your breach of the disclosure obligations in Section 7; (b) your breach of the financial content rules in Section 8; (c) your publication of prohibited claims under Section 9; (d) fraudulent referral activity; (e) your breach of confidentiality obligations under Section 6; or (f) your indemnification obligations under Section 18.</p></div>
+
+  <!-- 20 -->
+  <div class="section-head"><h2>20. &nbsp; Governing Law and Dispute Resolution</h2></div>
+  <div class="clause"><span class="clause-num">20.1</span><p><strong>Governing Law.</strong> This Agreement is governed by and construed in accordance with the laws of the State of New York, without regard to its conflict-of-laws rules. The United Nations Convention on Contracts for the International Sale of Goods does not apply.</p></div>
+  <div class="clause"><span class="clause-num">20.2</span><p><strong>Binding Arbitration.</strong> Except as provided in Section 20.4, all disputes, claims, or controversies arising out of or relating to this Agreement, its breach, termination, or validity shall be resolved exclusively by binding arbitration administered by the National Arbitration and Mediation (&ldquo;NAM&rdquo;) under its then-current Commercial Arbitration Rules. The arbitration shall be conducted before a single arbitrator, in English, and the arbitral award shall be final, binding, and enforceable as a judgment in any court of competent jurisdiction.</p></div>
+  <div class="clause"><span class="clause-num">20.3</span><p><strong>Costs.</strong> PREZLO will bear all NAM filing, administrative, and arbitrator fees exceeding the amount you would be required to pay to file a comparable claim in a court of general jurisdiction in your county of residence.</p></div>
+  <div class="clause"><span class="clause-num">20.4</span><p><strong>Injunctive Relief Exception.</strong> Either party may seek emergency injunctive or other equitable relief in a court of competent jurisdiction, without waiving its right to arbitration, solely to prevent irreparable harm pending arbitration. This right applies equally to both parties. For the avoidance of doubt, this Section applies to claims by PREZLO arising from breach of Section 6 (Confidentiality) and Section 17 (Non-Disparagement).</p></div>
+  <div class="clause"><span class="clause-num">20.5</span><p><strong>Class Action Waiver.</strong> All claims must be brought on an individual basis. You irrevocably waive any right to bring or participate in any class action, collective arbitration, consolidated proceeding, private attorney general action, or representative proceeding arising out of or relating to this Agreement.</p></div>
+  <div class="clause"><span class="clause-num">20.6</span><p><strong>California Residents.</strong> Notwithstanding Section 20.1, residents of California retain all consumer rights that cannot be waived under California law, including rights under the California Consumer Privacy Act and the California Unfair Competition Law.</p></div>
+
+  <!-- 21 -->
+  <div class="section-head"><h2>21. &nbsp; Modifications</h2></div>
+  <div class="clause"><span class="clause-num">21.1</span><p>PREZLO may amend this Agreement at any time by posting an updated version at hbtradingbusiness-stack.github.io/legal/creator-terms and, where reasonably practicable, notifying active Creators by email no fewer than 14 days before the amendment takes effect.</p></div>
+  <div class="clause"><span class="clause-num">21.2</span><p>Your continued use of an Affiliate Link, receipt of Commissions, or participation in the Program after the effective date of any amendment constitutes acceptance of the amended Agreement. If you do not accept the amended terms, you must cease participation and provide written notice to legal@getprezlo.com.</p></div>
+
+  <!-- 22 -->
+  <div class="section-head"><h2>22. &nbsp; General Provisions</h2></div>
+  <div class="clause"><span class="clause-num">22.1</span><p><strong>Entire Agreement.</strong> This Agreement, together with any written onboarding confirmation and incorporated Creator Content Policy, constitutes the entire agreement between the parties with respect to the subject matter and supersedes all prior representations, discussions, and agreements, including any terms communicated by direct message or email that are inconsistent with this Agreement.</p></div>
+  <div class="clause"><span class="clause-num">22.2</span><p><strong>Severability.</strong> If any provision of this Agreement is held invalid, illegal, or unenforceable, that provision will be modified to the minimum extent necessary to render it enforceable, and the validity and enforceability of the remaining provisions will not be affected.</p></div>
+  <div class="clause"><span class="clause-num">22.3</span><p><strong>No Waiver.</strong> PREZLO&rsquo;s failure to enforce any right or provision of this Agreement at any time shall not constitute a waiver of that right or provision.</p></div>
+  <div class="clause"><span class="clause-num">22.4</span><p><strong>No Assignment.</strong> You may not assign, delegate, or transfer any right or obligation under this Agreement without PREZLO&rsquo;s prior written consent. Any purported assignment in violation of this Section is void. PREZLO may assign this Agreement in connection with a merger, acquisition, or transfer of substantially all of its assets or operations without your consent.</p></div>
+  <div class="clause"><span class="clause-num">22.5</span><p><strong>Notices.</strong> All legal notices to PREZLO must be delivered by email to legal@getprezlo.com. Notices will be deemed received on the next business day following confirmed transmission.</p></div>
+  <div class="clause"><span class="clause-num">22.6</span><p><strong>Language.</strong> This Agreement is executed in English. Any translation provided is for convenience only. In the event of conflict between the English version and any translation, the English version controls.</p></div>
+  <div class="clause"><span class="clause-num">22.7</span><p><strong>Counterparts and Electronic Acceptance.</strong> This Agreement may be accepted electronically. An electronic acceptance, click-through confirmation, or digital signature shall have the same legal force and effect as a handwritten signature under applicable law, including the Electronic Signatures in Global and National Commerce Act (E-SIGN Act), 15 U.S.C. &sect; 7001 et seq.</p></div>
+
+  <!-- ACCEPTANCE -->
+  <div class="acceptance">
+    <h3>Acceptance</h3>
+    <div class="notice">
+      <p>By accepting this Agreement (whether by clicking &ldquo;Accept,&rdquo; using your Affiliate Link, or receiving Free Access from PREZLO), you confirm that:</p>
+    </div>
+    <ul class="legal-list" style="margin-top:14px;">
+      <li>You are at least 18 years of age and have full legal capacity to enter into a binding contract.</li>
+      <li>You have read and understood this Agreement in its entirety and agree to be bound by all of its terms.</li>
+      <li>You understand that PREZLO is a market-data application and that your Content must not present PREZLO&rsquo;s alerts as investment advice, trading recommendations, or securities-related guidance.</li>
+      <li>You understand that failure to include required FTC disclosures and financial disclaimers in your Content constitutes a material breach of this Agreement and may result in Commission forfeiture, termination, and legal liability.</li>
+      <li>You acknowledge that you have received, or had the opportunity to receive, a copy of this Agreement and have had the opportunity to seek independent legal counsel before accepting.</li>
+      <li>You agree to keep Confidential Information received in connection with this Agreement strictly confidential in accordance with Section 6.</li>
+    </ul>
+  </div>
+
+  <div class="doc-footer">
+    PREZLO Creator &amp; Affiliate Agreement &nbsp;&middot;&nbsp; Version 1.3 &nbsp;&middot;&nbsp; May 25, 2026 &nbsp;&middot;&nbsp; legal@getprezlo.com
+  </div>
+
+</div>
+
+<div class="site-footer">
+  &copy; 2026 PREZLO &nbsp;&middot;&nbsp;
+  <a href="https://hbtradingbusiness-stack.github.io/legal/terms.html">Terms</a> &nbsp;&middot;&nbsp;
+  <a href="https://hbtradingbusiness-stack.github.io/legal/privacy.html">Privacy</a> &nbsp;&middot;&nbsp;
+  <a href="https://hbtradingbusiness-stack.github.io/legal/disclaimer.html">Disclaimer</a> &nbsp;&middot;&nbsp;
+  <a href="mailto:legal@getprezlo.com">legal@getprezlo.com</a>
+</div>
+
+</body>
+</html>
 
